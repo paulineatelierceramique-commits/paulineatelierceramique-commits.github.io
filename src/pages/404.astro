@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import monImage from '../images/aproposnb.webp';
+---
+
+<BaseLayout
+  title="Erreur 404"
+  description="Page d'erreur 404"
+>
+  <section class="error-404">
+    <div class="container">
+      <p class="surtitle">Erreur 404</p>
+      <h1>Oups ! Cette pièce n'est pas sortie du four</h1>
+
+      <div class="image-wrap">
+        <Image
+          src={monImage}
+          alt="Photo d'une poterie totalement ratée"
+          width={260}
+          sizes="(max-width: 700px) 60vw, 260px"
+          class="error-image"
+        />
+      </div>
+
+      <p class="intro">
+        La page que vous cherchez n’a sans doute pas pris la bonne forme, ou n'est plus disponible.<br>Je vous invite à revenir à l'accueil pour poursuivre la visite de l'atelier.
+      </p>
+
+      <div class="cta">
+    <a href={`${import.meta.env.BASE_URL}`} class="bouton-fonce">Retourner à l'accueil</a>
+  </div>
+
+     
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .error-404 {
+    padding-block: clamp(3rem, 8vw, 6rem);
+    background: var(--color-blanc-lin);
+    color: var(--color-gris-fonce);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    width: min(100%, 760px);
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 5vw, 2rem);
+    text-align: center;
+  }
+
+  .surtitle {
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.7;
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .image-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.75rem;
+  }
+
+  :global(.error-image) {
+    width: min(260px, 60vw);
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .intro {
+    max-width: 34rem;
+    margin: 0 auto 1.75rem;
+    line-height: 1.7;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.9rem 1.3rem;
+    border-radius: 999px;
+    text-decoration: none;
+    background: var(--color-gris-fonce);
+    color: var(--color-blanc-lin);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .cta:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+  }
+</style>
