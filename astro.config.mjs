@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://paulineatelierceramique-commits.github.io',
+  site: 'https://paulinerebufat.fr',
  
   integrations: [sitemap()],
 });
