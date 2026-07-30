@@ -4,7 +4,7 @@ export const siteConfig = {
   url: "https://paulinerebufat.fr",
   tagline: "Créations céramiques, stages et expositions",
   description: "Pauline Rébufat Créations Céramiques. Découvrez ses pièces artisanales, ses stages de poterie et ses expositions dans le Pays de Retz.",
-  defaultOgImage: "https://paulinerebufat.fr/mains.webp",
+  defaultOgImage: "https://paulinerebufat.fr/creation18.webp",
   telephone: "+33660828775",
   email: "pauline.rebufat@gmail.com",
   facebook: "https://www.facebook.com/CERAMIQUEPAULINEREBUFAT",
