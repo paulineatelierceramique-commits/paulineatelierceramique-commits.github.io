@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://paulinerebufat.fr',
- 
+   trailingSlash: 'never',
   integrations: [sitemap()],
 });
 
