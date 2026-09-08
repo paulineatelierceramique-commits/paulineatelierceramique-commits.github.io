@@ -5,7 +5,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://www.paulinerebufat.fr"
+          "value": "*"
         },
         {
           "key": "X-Content-Type-Options",
