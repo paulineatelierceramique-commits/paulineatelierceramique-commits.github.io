@@ -4,6 +4,10 @@
       "source": "/(.*)",
       "headers": [
         {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://www.paulinerebufat.fr"
+        },
+        {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
         },
